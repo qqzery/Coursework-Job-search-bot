@@ -1,0 +1,9 @@
+@echo off
+echo Зупиняємо бота...
+taskkill /f /im python.exe >nul 2>&1
+timeout /t 2 /nobreak >nul
+echo Очищаємо термінал...
+cls
+echo Запускаємо бота...
+python bot.py
+pause
